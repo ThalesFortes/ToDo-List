@@ -80,3 +80,44 @@ main{
     margin-right: 0.8rem;
   }
 }
+
+#create-todo-section{
+  width: 100%;
+}
+
+#create-todo-form{
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.input-description{
+  height: 3.2rem;
+  width: 100%;
+  font-size: 1.6rem;
+  border-radius: .4rem;
+  margin-right: 0.4rem;
+  outline: 0;
+  border: 1px solid #646464;
+  padding-left: .8rem;
+
+  &:focus{
+    border: 1px solid #5eb7f6;
+  }
+}
+
+.add-task-btn{
+  box-sizing: border-box;
+  height: 3.2rem;
+  width: 3.6rem;
+  color: #fff;
+  background: #8f49e7;
+  border-radius: .4rem;
+  font-size: 2.4rem;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
