@@ -148,11 +148,8 @@ main{
 footer{
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-
-  & > #count-tasks{
-    font-size: 1.6rem;
-  }
+  font-size: 1.6rem;
 }
