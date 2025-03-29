@@ -1,5 +1,6 @@
 let tasks = []
 
+// Contador de progresso
 const renderTasksProgressData = (tasks) =>{
   let tasksProgress;
   const tasksProgressDom = document.getElementById('tasks-progress')
