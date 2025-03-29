@@ -100,22 +100,29 @@ const getNewTaskData = (event) =>{
   return {description, id};
 }
 
-const createTask = (event) =>{
-  event.preventDefault();
-  const NewTaskData = getNewTaskData(event)
-  //const {id,description} = NewTaskData;
+const getCreatedTaskInfo = (event) => new Promise((resolve) => {
+  setTimeout(() => {
+      resolve(getNewTaskData(event))
+  }, 3000)
+})
 
-  const checkbox = getCheckboxInput(NewTaskData)
-  createTaskListItem(NewTaskData, checkbox)
+const createTask = async (event) =>{
+  event.preventDefault();
+  document.getElementById('save-task').setAttribute('disabled',true)
+  const newTaskData = await getCreatedTaskInfo(event)
+
+  const checkbox = getCheckboxInput(newTaskData)
+  createTaskListItem(newTaskData, checkbox)
 
   const tasks = getTasksFromLocalStorage();
   const updatedTasks = [
     ...tasks, 
-    {id:NewTaskData.id, description:NewTaskData.description, checked:false}
+    {id:newTaskData.id, description:newTaskData.description, checked:false}
   ]
   setTasksInLocalStorage(updatedTasks)
 
   document.getElementById('description').value = ''
+  document.getElementById('save-task').removeAttribute('disabled')
 }
 
 window.onload = function() {
