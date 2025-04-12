@@ -1,20 +1,36 @@
-# TODO-LIST
+<h1 align="center" style="font-weight: bold;">ToDo List💻</h1>
 
-- ToDo-list Responsivo uma aplicação em HTML, CSS e JavaScript que cria,apaga,marca como concluida todas as tarefas e a salvam no local storage
+<p align="center">
+ <a href="#tech">Technologies</a> • 
+ <a href="#started">Getting Started</a> • 
+</p>
 
-## Utilizado
+<p align="center">
+    <b>Responsive ToDo-list is an application in HTML, CSS and JavaScript that creates, deletes, marks as completed all tasks and saves them to local storage..</b>
+    <b>Semantic Tags.
+       Units of measurement such as rem, % and (vh, vw).
+       JavaScript using arrays of objects, promises, asynchronous and synchronous functions, local storage, functions.
+    </b>
+</p>
 
-- Tags Semânticas
-- Unidades de medidas como rem, % e (vh , vw)
-- JavaScript utilizando array de objetos, promisses, funções assincronas e sincronas, armazenamento em local storage, funções
+<p align="center">
+     <a href="https://thalesfortes.github.io/ToDo-List/">📱 Visit this Project</a>
+</p>
 
-## Visualização
+<h2 id="layout">🎨 Layout</h2>
 
-- Basta baixar e clicar no index ou acessar o site
- 
-## Tecnologias
+<p align="center">
+      <img src="./images/print1.png" alt="Imagem da pagina demonstrando como ela e" width="400px">
+    <img src="./images/print2.png" alt="Imagem da pagina demonstrando como ela e" width="400px">
+</p>
+
+<h2 id="technologies">💻 Technologies</h2>
 
 - HTML5
 - CSS3
 - JavaScript
+
+<h2 id="started">🚀 Getting started</h2>
+
+- Just download the project with its assets and run it with liveserve or just by opening the html document
 
